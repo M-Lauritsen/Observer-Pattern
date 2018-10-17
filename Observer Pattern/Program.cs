@@ -84,6 +84,12 @@ namespace Observer_Pattern
                 }
             }
         }
+
+        //Note that the Restaurants will want to buy veggies if the price dips below a certain threshold
+        //amount, which differs per restaurant.
+        //To put this all together, in our Main method we can define a few restaurants that want to
+        //observe the price of carrots, then fluctuate that price:
+
         static void Main(string[] args)
         {
             Carrots carrots = new Carrots(0.82);
